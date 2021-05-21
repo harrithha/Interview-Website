@@ -1,0 +1,16 @@
+.navigation{
+    background-color: black;
+}
+
+.navbrand{
+    font-weight: bold;
+
+}
+
+.navitem{
+    transition: 0.25s;
+}
+.navitem:hover{
+    transform: scale(1.1);
+    text-decoration: underline;
+}
