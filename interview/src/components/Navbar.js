@@ -1,10 +1,12 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import * as ReactBootStrap from 'react-bootstrap'
+import './navbar.css'
 function Navbar() {
     return (
-        <div>
-       <ReactBootStrap.Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <div >
+            
+    <ReactBootStrap.Navbar className="nav" collapseOnSelect expand="lg" bg="light" variant="light">
   <ReactBootStrap.Navbar.Brand href="#home">React-Bootstrap</ReactBootStrap.Navbar.Brand>
   <ReactBootStrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">
@@ -27,6 +29,7 @@ function Navbar() {
     </ReactBootStrap.Nav>
   </ReactBootStrap.Navbar.Collapse>
 </ReactBootStrap.Navbar>
+  
         </div>
     )
 }
