@@ -1,0 +1,19 @@
+.webname{
+    background-color: #9932CC ;
+    color: white;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+.head{
+    position: absolute;
+    margin-top: 40vh;
+    margin-left: 50vh;
+
+
+}
+
+.header
+{
+    font-size: 70px;
+}

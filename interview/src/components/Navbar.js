@@ -4,10 +4,10 @@ import * as ReactBootStrap from 'react-bootstrap'
 import './navbar.css'
 function Navbar() {
     return (
-        <div >
+        <div class='sticky-top' >
             
-    <ReactBootStrap.Navbar className="nav" collapseOnSelect expand="lg" bg="light" variant="light">
-  <ReactBootStrap.Navbar.Brand href="#home">React-Bootstrap</ReactBootStrap.Navbar.Brand>
+    <ReactBootStrap.Navbar className="nav" collapseOnSelect expand="lg" bg="dark" variant="dark">
+  <ReactBootStrap.Navbar.Brand href="#home">Company Login</ReactBootStrap.Navbar.Brand>
   <ReactBootStrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">
     <ReactBootStrap.Nav className="mr-auto">
@@ -22,10 +22,7 @@ function Navbar() {
       </ReactBootStrap.NavDropdown>
     </ReactBootStrap.Nav>
     <ReactBootStrap.Nav>
-      <ReactBootStrap.Nav.Link href="#deets">More deets</ReactBootStrap.Nav.Link>
-      <ReactBootStrap.Nav.Link eventKey={2} href="#memes">
-        Dank memes
-      </ReactBootStrap.Nav.Link>
+      <ReactBootStrap.Navbar.Brand href="#home">Interviwee Login</ReactBootStrap.Navbar.Brand>
     </ReactBootStrap.Nav>
   </ReactBootStrap.Navbar.Collapse>
 </ReactBootStrap.Navbar>
