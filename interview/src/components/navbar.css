@@ -1,7 +1,3 @@
-.navigation{
-    background-color: black;
-}
-
 .navbrand{
     font-weight: bold;
 
@@ -12,5 +8,6 @@
 }
 .navitem:hover{
     transform: scale(1.1);
+    font-weight: bold;
     text-decoration: underline;
 }
