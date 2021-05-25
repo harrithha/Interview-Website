@@ -11,9 +11,8 @@ function Navbar() {
   <ReactBootStrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">
     <ReactBootStrap.Nav className="ml-auto">
-      <ReactBootStrap.Nav.Link className="navitem" href="#features">Features</ReactBootStrap.Nav.Link>
-      <ReactBootStrap.Nav.Link className="navitem" href="#pricing">Pricing</ReactBootStrap.Nav.Link>
-      <ReactBootStrap.NavDropdown className="navitem" title="Dropdown" id="collasible-nav-dropdown">
+      <ReactBootStrap.Nav.Link className="navitem" href="Features.js">Features</ReactBootStrap.Nav.Link>
+       <ReactBootStrap.NavDropdown className="navitem" title="Dropdown" id="collasible-nav-dropdown">
         <ReactBootStrap.NavDropdown.Item href="#action/3.1">Action</ReactBootStrap.NavDropdown.Item>
         <ReactBootStrap.NavDropdown.Item href="#action/3.2">Another action</ReactBootStrap.NavDropdown.Item>
         <ReactBootStrap.NavDropdown.Item href="#action/3.3">Something</ReactBootStrap.NavDropdown.Item>
