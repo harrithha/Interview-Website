@@ -1,6 +1,26 @@
+.features{
+    padding: 10% 7%;
+    
+}
 
+.icon{
+    
+    color: #D81B60;
+    transform: scale(3.5);
+    margin: 10px;
+    transition: 0.25s;
+}
 
-.feature{
-    display: flex;
-    justify-content: space-evenly;
+.icon:hover{
+    transform: scale(4);
+    color: #880E4F;
+    
+}
+
+p{
+    padding: 10%;
+    color: #212121;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
 }

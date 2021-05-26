@@ -1,8 +1,9 @@
 .webname{
-    background-image: linear-gradient(to bottom, #E6E6FA, #EE82EE,#9932CC) ;
-    color: white;
-    font-family: sans-serif;
-    height: 100vh;
+    background-image: linear-gradient(to bottom, #D81B60,#C2185B,#880E4F) ;
+    text-align: center;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    height: 95vh;
 
 }
 /* linear-gradient(to bottom, #C51162, #880E4F) */
@@ -35,6 +36,7 @@
 }
 
 .button:hover{
+    color: #212121;
     transform: scale(1.1);
     font-weight: bold;
     text-decoration: underline;

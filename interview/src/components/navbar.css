@@ -4,7 +4,7 @@
 }
 
 .navitem{
-    transition: 0.25s;
+    transition: 0.20s;
 }
 .navitem:hover{
     transform: scale(1.1);

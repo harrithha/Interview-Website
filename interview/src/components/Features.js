@@ -1,27 +1,31 @@
 import React from 'react'
-import { BsCheckCircle } from 'react-icons/bs'
+import "./Features.css"
+import { FaCheckCircle } from 'react-icons/fa';
+
 
 function Features() {
     return (
-        
-        <div className='fe' >
-            <div className='feature'>
-            <BsCheckCircle />
-            Easy to Use
-            </div>
-            <div className='feature'>
-            <BsCheckCircle />
-            Easy to Use
-            </div>
-            <div className='feature'>
-            <BsCheckCircle />
-            COMMITTED TO WORK
-            </div>
-            <div className='feature'>
-            <BsCheckCircle />
-            COMMITTED TO WORK
+        <div className="features">
+            <div className='row' >
+              <div className='feature col-lg-3'>
+               <FaCheckCircle className="icon"/>
+               <p>Easy to Use</p>
+              </div>
+              <div className='feature col-lg-3'>
+               <FaCheckCircle className="icon"/>
+               <p>Easy to Use</p>
+              </div>
+              <div className='feature col-lg-3'>
+               <FaCheckCircle className="icon"/>
+               <p>COMMITTED TO WORK</p>
+              </div>
+              <div className='feature col-lg-3'>
+               <FaCheckCircle className="icon"/>
+               <p>COMMITTED TO WORK</p>
+              </div>
             </div>
         </div>
+        
     )
 }
 

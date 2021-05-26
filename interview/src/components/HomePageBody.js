@@ -20,7 +20,7 @@ const renderCard = (card, index) => {
         <Card.Body>
           <Card.Title>{card.title}</Card.Title>
          <div className='button'>
-          <Button variant="primary">{card.text}</Button>
+          <Button variant="dark">{card.text}</Button>
           </div>
         </Card.Body>
       </Card>
