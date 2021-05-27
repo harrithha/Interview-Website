@@ -1,12 +1,13 @@
 .webname{
-    background-image: linear-gradient(to bottom, #D81B60,#C2185B,#880E4F) ;
-    text-align: center;
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    height: 95vh;
+        background-image: linear-gradient(to bottom, #D81B60,#C2185B,#880E4F) ;
+        text-align: center;
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        height: 95vh;
+    
+    }
 
-}
-/* linear-gradient(to bottom, #C51162, #880E4F) */
+
 .head{
     position: absolute;
     margin-top: 10vh;
@@ -21,18 +22,11 @@
     color: black;
 }
 
-.grid{
-    display: flex;
-    justify-content: space-evenly;
-    color: black;
-    font-weight: bold;
-    font-family: sans-serif;
-
-}
 
 .button{
     margin-bottom : 0px;
     padding-bottom: 0px;
+    
 }
 
 .button:hover{
@@ -41,6 +35,4 @@
     font-weight: bold;
     text-decoration: underline;
 }
-.Card{
-    color: brown;
-}
+ 
