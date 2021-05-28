@@ -5,16 +5,20 @@ import * as ReactBootStrap from 'react-bootstrap'
 import HomePageBody from './components/HomePageBody';
 import Features from './components/Features';
 import Footer from './components/Footer';
+import CompanyLogin from './components/CompanyLogin';
+import IntervieweeLogin from './components/IntervieweeLogin';
 
 
 
 function App() {
   return (
     <div className="App">
- <Navbar/>
+ {/* <Navbar/>
  <HomePageBody />
  <Features />
- <Footer/>
+ <Footer/> */}
+ <CompanyLogin/>
+ <IntervieweeLogin/>
     </div>
   );
 }

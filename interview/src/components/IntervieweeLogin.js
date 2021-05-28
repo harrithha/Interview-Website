@@ -4,14 +4,15 @@ import {Form} from 'react-bootstrap';
 import {Button} from 'react-bootstrap';
 
 
-function CompanyLogin() {
+function IntervieweeLogin() {
     return (
         <div class='r'>
         
+        
         <Form className='login col-lg-12'>
         
-        <p className='welcome col-lg-12'>WELCOME TO COMPANY LOGIN</p>
-        <p className='intro col-lg-12'>You can set your own questions for the interviewees!!!</p>
+        <p className='welcome col-lg-12'>WELCOME TO INTERVIEWEE LOGIN</p>
+        <p className='intro col-lg-12'>All the best for your Interview! Stay Calm!</p>
         
         <Form.Group className='hi'>
         <Form.Group controlId="formBasicEmail" className='email col-lg-12'>
@@ -32,4 +33,4 @@ function CompanyLogin() {
     )
 }
 
-export default CompanyLogin
+export default IntervieweeLogin
