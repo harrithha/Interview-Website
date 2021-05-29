@@ -7,6 +7,7 @@ import Features from './components/Features';
 import Footer from './components/Footer';
 import CompanyLogin from './components/CompanyLogin';
 import IntervieweeLogin from './components/IntervieweeLogin';
+import CompanySignup from './components/CompanySignup';
 
 
 
@@ -19,6 +20,7 @@ function App() {
  <Footer/> */}
  <CompanyLogin/>
  <IntervieweeLogin/>
+ <CompanySignup />
     </div>
   );
 }
