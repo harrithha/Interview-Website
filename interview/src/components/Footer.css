@@ -1,4 +1,21 @@
 .footer{
-    background-color: rgb(94, 0, 135);
-    color: white;
+    padding: 0 20% 15%;
+    /* background-color: rgb(94, 0, 135); */
+    background-image: linear-gradient(to bottom, #D81B60,#C2185B,#880E4F) ;
+    }
+
+h1{
+    text-align: center;
+    padding-top: 5%;
+    font-family: 'Pacifico', cursive;
+}
+
+.icon{
+    margin-top: 35%;
+    transform: scale(2.25);
+    transition: 0.25s; 
+}
+
+.icon:hover{
+    transform: scale(2.7);
 }

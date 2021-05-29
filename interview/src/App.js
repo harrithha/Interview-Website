@@ -13,12 +13,12 @@ import IntervieweeLogin from './components/IntervieweeLogin';
 function App() {
   return (
     <div className="App">
- {/* <Navbar/>
+ <Navbar/>
  <HomePageBody />
  <Features />
- <Footer/> */}
- <CompanyLogin/>
- <IntervieweeLogin/>
+ <Footer/>
+ {/* <CompanyLogin/>
+ <IntervieweeLogin/> */}
     </div>
   );
 }
