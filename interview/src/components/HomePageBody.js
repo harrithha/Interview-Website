@@ -16,7 +16,7 @@ function HomePageBody() {
 
         <div class="webname">
             <div class="head">
-              <h1 class="header">(Interwiew Website Name)</h1>
+              <h1 class="header">Welcome to SyneView</h1>
               <div className='feature col-lg-3'>
                <FaMobileAlt className="icon"/>
                <p>ALL DEVICES COMPATIBLE</p>

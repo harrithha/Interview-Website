@@ -11,3 +11,7 @@
     font-weight: bold;
     text-decoration: underline;
 }
+
+img{
+    transform: scale(0.8);
+}

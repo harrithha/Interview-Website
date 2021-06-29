@@ -7,7 +7,7 @@ function Navbar() {
         <div class='sticky-top' >
             
     <ReactBootStrap.Navbar className="nav" collapseOnSelect expand="lg" bg="dark" variant="dark">
-  <ReactBootStrap.Navbar.Brand className="navbrand" href="#home">SyneView</ReactBootStrap.Navbar.Brand>
+  <ReactBootStrap.Navbar.Brand className="navbrand" href="#home"><img className="weblogo" src="interview.png" /></ReactBootStrap.Navbar.Brand>
   <ReactBootStrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">
     <ReactBootStrap.Nav className="ml-auto">
@@ -28,3 +28,5 @@ function Navbar() {
 }
 
 export default Navbar
+
+{/* <img className="weblogo" src='interview.png' /> */}
