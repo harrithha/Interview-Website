@@ -36,3 +36,15 @@
     text-decoration: underline;
 }
  
+.icon{
+    
+    color: #D81B60;
+    transform: scale(3.5);
+    margin: 10px;
+    transition: 0.25s;
+}
+.icon:hover{
+    transform: scale(4);
+    color: #880E4F;
+    
+}
