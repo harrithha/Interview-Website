@@ -2,24 +2,15 @@
         background-image: linear-gradient(to bottom, #D81B60,#C2185B,#880E4F) ;
         text-align: center;
         color: #fff;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Roboto', sans-serif;
         height: 95vh;
-    
-    }
-
-
-.head{
-    position: absolute;
-    margin-top: 10vh;
-    margin-left: 40vh;
-
 }
 
 .header
 {
     font-size: 70px;
     margin-bottom: 10vh;
-    color: black;
+    color: white;
 }
 
 
@@ -48,3 +39,17 @@
     color: #880E4F;
     
 }
+
+.card1 {
+    background-color: black;
+    position: absolute;
+    left: 100px;
+}
+.card2 {
+    background-color: black;
+    position: absolute;
+    right: 100px;
+}
+
+
+

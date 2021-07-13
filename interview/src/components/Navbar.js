@@ -2,12 +2,13 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import * as ReactBootStrap from 'react-bootstrap'
 import './navbar.css'
+import { FaBlackberry } from 'react-icons/fa'
 function Navbar() {
     return (
         <div class='sticky-top' >
             
-    <ReactBootStrap.Navbar className="nav" collapseOnSelect expand="lg" bg="dark" variant="dark">
-  <ReactBootStrap.Navbar.Brand className="navbrand" href="#home"><img className="weblogo" src="interview.png" /></ReactBootStrap.Navbar.Brand>
+    <ReactBootStrap.Navbar className="nav navibar" collapseOnSelect expand="lg" variant="dark">
+  <ReactBootStrap.Navbar.Brand className="navbrand" href="#home">SyneView <img className="weblogo" src="interview.png" /></ReactBootStrap.Navbar.Brand>
   <ReactBootStrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">
     <ReactBootStrap.Nav className="ml-auto">
