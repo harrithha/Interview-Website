@@ -13,11 +13,11 @@ function App() {
     <div className="App">
  <Navbar/>
  <HomePageBody />
- <Features />
- <Footer/> 
+ <Features /> 
  <CompanyLogin/>
  <IntervieweeLogin/>
  <CompanySignup />
+ <Footer/>
     </div>
   );
 }

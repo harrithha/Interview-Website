@@ -3,6 +3,10 @@
 
 }
 
+.navibar {
+    background-color: black;
+}
+
 .navitem{
     transition: 0.20s;
 }
