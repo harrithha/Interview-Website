@@ -1,5 +1,5 @@
 import React from 'react';
-import './CompanyLogin.css';
+import './IntervieweeLogin.css';
 import {Form} from 'react-bootstrap';
 import {Button} from 'react-bootstrap';
 

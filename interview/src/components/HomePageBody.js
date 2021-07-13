@@ -1,8 +1,5 @@
 import React from 'react';
 import './HomePageBody.css';
-import Button from "@material-ui/core/Button";
-import {Card} from 'react-bootstrap';
-import Card1 from './Card';
 import { FaMobileAlt } from 'react-icons/fa';
 
 
