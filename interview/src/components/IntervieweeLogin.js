@@ -24,6 +24,7 @@ function IntervieweeLogin() {
         <Form.Label>PASSWORD</Form.Label>
           <Form.Control type="password" placeholder="Password" />
        </Form.Group>
+       <br /> <br /> <br />
         <Button className='b' type="submit">
           SUBMIT
         </Button>

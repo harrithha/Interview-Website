@@ -8,11 +8,15 @@
     font-family: 'Montserrat', sans-serif;
    }
 
-   .b{
-       background-color: pink;
-       color: black;
-       margin-top: 60px;
-   }
+   .b{ 
+    background-color: pink;
+    color: black;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
    .b:hover{
        background-color: powderblue;
@@ -49,7 +53,12 @@
     padding-top: 40px;
     padding-bottom: 0;
     margin-bottom: 0;
-font-size: 8vh;
+    font-size: 8vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -57,8 +66,13 @@ font-size: 8vh;
     margin-top: 0px;
     padding-top: 40px;
     padding-bottom: 0;
-    margin-bottom: 12vh;
-font-size: 4vh;
+    margin-bottom: 0vh;
+    font-size: 4vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 

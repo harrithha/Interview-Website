@@ -79,13 +79,12 @@ const {name, email, password, confirmPass} = userSignUp;
         </Form.Group>
         <br /> <br />
         <Form.Group controlId="formBasicPassword" className='password col-lg-12'>
-          
           <Form.Label>CONFIRM PASSWORD</Form.Label>
           <Form.Control type="password" placeholder="Confirm password" autoComplete="off" value={userSignUp.confirmPass} onChange={handleInput} 
           name = "confirmPass" id="confirmPass"/>
         </Form.Group>
 
-       <br /> <br />
+       <br /> <br />  
         <Button className='b' type="submit" onClick={PostData}>
           SUBMIT
         </Button>
