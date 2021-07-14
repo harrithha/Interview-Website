@@ -14,25 +14,25 @@ function HomePageBody() {
   
 
      <div class="webname">
-        <h1 class="header">Welcome to SyneView</h1> 
+        <h1 class="header">Welcome</h1>
+        <h1 class="header">to</h1>
+        <h1 class="header">Syneview</h1> 
         <Card className="card1" style={{ width: '18rem' }}>
           <Card.Body>
-            <Card.Title>Card Title</Card.Title>
-            <Card.Text>
-            Some quick example text to build on the card title and make up the bulk of
-            the card's content.
+            <Card.Title className="cardtitle">Company</Card.Title>
+            <Card.Text className="cardtext">
+            To head to your login page, click the button below.
             </Card.Text>
-            <Button variant="primary">Go somewhere</Button>
+            <Button className="btn cbutton"  variant="primary">Login Page</Button>
           </Card.Body>
         </Card>
         <Card className="card2" style={{ width: '18rem' }}>
           <Card.Body>
-            <Card.Title>Card Title</Card.Title>
-            <Card.Text>
-            Some quick example text to build on the card title and make up the bulk of
-            the card's content.
+            <Card.Title className="cardtitle">Interviewee</Card.Title>
+            <Card.Text className="cardtext" >
+            To login for your interview, click the button below.
             </Card.Text>
-            <Button variant="primary">Go somewhere</Button>
+            <Button className="btn cbutton" variant="primary">Login Page</Button>
           </Card.Body>
         </Card>
         

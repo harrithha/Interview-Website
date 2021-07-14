@@ -1,6 +1,15 @@
 .features{
     padding: 10% 7%;
+    color: #37474F;
     
+}
+
+.featureicon{
+    position: absolute;
+    top: -15px;
+    left: 100px;
+    transform: scale(2.5);
+    background-image: linear-gradient(to bottom, #D81B60,#C2185B,#880E4F) ;
 }
 
 .icon{
@@ -23,3 +32,5 @@ p{
     font-size: 20px;
     font-weight: bold;
 }
+
+
