@@ -1,6 +1,5 @@
 import React from 'react';
 import './HomePageBody.css';
-import { FaMobileAlt } from 'react-icons/'
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 

@@ -2,15 +2,13 @@ import React, { useState } from 'react';
 import './CompanySignup.css';
 import {Form} from 'react-bootstrap';
 import {Button} from 'react-bootstrap';
-import {useHistory} from 'react-router-dom';
 
 const CompanySignup = () => {
-  const history = useHistory();
   const [userSignUp, setUserSignUp] = useState({
     name: "",
     email: "",
     password : "",
-    passwordConfirm: ""
+    confirmPass: ""
 
   });
 
@@ -26,14 +24,14 @@ const CompanySignup = () => {
 
 const PostData = async (e) => {
  e.preventDefault();
-const {name, email, password, passwordConfirm} = userSignUp;
+const {name, email, password, confirmPass} = userSignUp;
  const res = await fetch("/api/v1/users/signup",{
    method : "POST",
    headers : {
      "Content-Type" : "application/json"
    },
    body : JSON.stringify({
-     name,email,password,passwordConfirm 
+     name,email,password,confirmPass 
    })
 
  });
@@ -48,7 +46,6 @@ const {name, email, password, passwordConfirm} = userSignUp;
   window.alert("Valid Registration");
   console.log("Successful");
 
-  history.push("/api/v1/users/login");
  }
 }
 
@@ -75,23 +72,19 @@ const {name, email, password, passwordConfirm} = userSignUp;
           name = "email" id="email"/>
         </Form.Group>
       
-        <Form.Group controlId="formBasicEmail" className='email col-lg-12'>
-          <Form.Label>PASSWORD</Form.Label>
-          <Form.Control type="password" placeholder="Enter password" autoComplete="off" value={userSignUp.email} onChange={handleInput} 
-          name = "email" id="email"/>
-        </Form.Group>
-
         <Form.Group controlId="formBasicPassword" className='password col-lg-12'>
-        <Form.Label>PASSWORD</Form.Label>
+          <Form.Label>PASSWORD</Form.Label>
           <Form.Control type="password" placeholder="Enter password" autoComplete="off" value={userSignUp.password} onChange={handleInput} 
           name = "password" id="password"/>
-       </Form.Group>
-       <Form.Group controlId="formBasicPassword" className='password col-lg-12'>
-         <br /> <br />
-        <Form.Label>CONFIRM PASSWORD</Form.Label>
-          <Form.Control type="password" placeholder="Enter password" autoComplete="off" value={userSignUp.passwordConfirm} onChange={handleInput} 
-          name = "password" id="password" />
-       </Form.Group>
+        </Form.Group>
+        <br /> <br />
+        <Form.Group controlId="formBasicPassword" className='password col-lg-12'>
+          
+          <Form.Label>CONFIRM PASSWORD</Form.Label>
+          <Form.Control type="password" placeholder="Confirm password" autoComplete="off" value={userSignUp.confirmPass} onChange={handleInput} 
+          name = "confirmPass" id="confirmPass"/>
+        </Form.Group>
+
        <br /> <br />
         <Button className='b' type="submit" onClick={PostData}>
           SUBMIT
