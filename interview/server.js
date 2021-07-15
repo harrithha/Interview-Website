@@ -18,7 +18,7 @@ const DB = process.env.DATABASE.replace(
 try
 {
   mongoose
-  .connect(DB, {
+  .connect(process.env.DATABASE_LOCAL, {
     useNewUrlParser: true,
     useCreateIndex: true,
     useFindAndModify: false

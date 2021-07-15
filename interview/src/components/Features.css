@@ -10,6 +10,10 @@
     left: 100px;
     transform: scale(2.5);
     background-image: linear-gradient(to bottom, #D81B60,#C2185B,#880E4F) ;
+    transition: 0.2s;
+}
+.featureicon:hover{
+    transform: scale(2.8);
 }
 
 .icon{

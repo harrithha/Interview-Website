@@ -1,6 +1,5 @@
 import React from 'react';
 import './HomePageBody.css';
-import { FaMobileAlt } from 'react-icons/'
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 
@@ -21,7 +20,7 @@ function HomePageBody() {
           <Card.Body>
             <Card.Title className="cardtitle">Company</Card.Title>
             <Card.Text className="cardtext">
-            To head to your login page, click the button below.
+            To sign up or login as company, click the button below.
             </Card.Text>
             <Button className="btn cbutton"  variant="primary">Login Page</Button>
           </Card.Body>
@@ -32,7 +31,7 @@ function HomePageBody() {
             <Card.Text className="cardtext" >
             To login for your interview, click the button below.
             </Card.Text>
-            <Button className="btn cbutton" variant="primary">Login Page</Button>
+            <Button className="btn cbutton" shadow="none" variant="primary">Login Page</Button>
           </Card.Body>
         </Card>
         
