@@ -2,6 +2,13 @@ import React from 'react';
 import './HomePageBody.css';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import CompanySignup from './CompanySignup';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 
 
@@ -9,6 +16,7 @@ function HomePageBody() {
 
 
     return (
+      <Router>
     <div className={'home'}>
   
 
@@ -22,7 +30,13 @@ function HomePageBody() {
             <Card.Text className="cardtext">
             To sign up or login as company, click the button below.
             </Card.Text>
-            <Button className="btn cbutton"  variant="primary">Login Page</Button>
+          
+            <Button variant="primary">
+            <Link to = "/signup">
+              Go somewhere
+            </Link>
+            </Button>
+            
           </Card.Body>
         </Card>
         <Card className="card2" style={{ width: '18rem' }}>
@@ -37,8 +51,17 @@ function HomePageBody() {
         
         
      </div>
+     <div>
+     <Switch>
+          <Route path="/signup">
+            <CompanySignup />
+          </Route>
+        </Switch>
+     </div>
+     
        
     </div>
+    </Router>
      
         
     )
