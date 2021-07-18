@@ -79,7 +79,6 @@
 
 .cbutton {
     background-image: linear-gradient(to bottom, #D81B60,#C2185B,#880E4F) ;
-    outline: 0;
     transform: scale(0.8);
     margin-bottom: 10px;
     position: absolute;

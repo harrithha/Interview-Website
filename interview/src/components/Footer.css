@@ -1,7 +1,8 @@
 .footer{
     padding: 0 20% 15%;
     /* background-color: rgb(94, 0, 135); */
-    background-image: linear-gradient(to bottom, #D81B60,#C2185B,#880E4F) ;
+    /* background-image: linear-gradient(to bottom, #D81B60,#C2185B,#880E4F) ; */
+    background-color: black;
     }
 
 h1{
@@ -11,6 +12,8 @@ h1{
 }
 
 .icon{
+    position: absolute;
+    left: 75px;
     margin-top: 35%;
     transform: scale(2.25);
     transition: 0.25s; 
