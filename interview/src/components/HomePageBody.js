@@ -2,7 +2,12 @@ import React from 'react';
 import './HomePageBody.css';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
-
+// import {
+//   BrowserRouter as Router,
+//   Switch,
+//   Route,
+//   Link
+// } from "react-router-dom";
 
 
 function HomePageBody() {
