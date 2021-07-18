@@ -2,6 +2,13 @@ import React from 'react';
 import './HomePageBody.css';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import CompanySignup from './CompanySignup';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 // import {
 //   BrowserRouter as Router,
 //   Switch,
@@ -14,6 +21,7 @@ function HomePageBody() {
 
 
     return (
+      <Router>
     <div className={'home'}>
   
 
@@ -26,7 +34,13 @@ function HomePageBody() {
             Some quick example text to build on the card title and make up the bulk of
             the card's content.
             </Card.Text>
-            <Button variant="primary">Go somewhere</Button>
+          
+            <Button variant="primary">
+            <Link to = "/signup">
+              Go somewhere
+            </Link>
+            </Button>
+            
           </Card.Body>
         </Card>
         <Card className="card2" style={{ width: '18rem' }}>
@@ -42,8 +56,17 @@ function HomePageBody() {
         
         
      </div>
+     <div>
+     <Switch>
+          <Route path="/signup">
+            <CompanySignup />
+          </Route>
+        </Switch>
+     </div>
+     
        
     </div>
+    </Router>
      
         
     )
