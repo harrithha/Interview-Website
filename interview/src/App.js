@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import CompanyLogin from './components/CompanyLogin';
 import IntervieweeLogin from './components/IntervieweeLogin';
 import CompanySignup from './components/CompanySignup';
+import LoginEnter from './components/LoginEnter';
 
 
 
@@ -17,6 +18,7 @@ function App() {
  <CompanyLogin/>
  <IntervieweeLogin/>
  <CompanySignup />
+ <LoginEnter />
  <Footer/>
     </div>
   );
