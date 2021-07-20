@@ -1,7 +1,5 @@
 .footer{
-    padding: 0 20% 15%;
-    /* background-color: rgb(94, 0, 135); */
-    /* background-image: linear-gradient(to bottom, #D81B60,#C2185B,#880E4F) ; */
+    padding: 0 20% 5%;
     background-color: black;
     }
 
@@ -9,6 +7,13 @@ h1{
     text-align: center;
     padding-top: 5%;
     font-family: 'Pacifico', cursive;
+}
+
+.footertext{
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-bottom: 0;
 }
 
 .icon{
@@ -22,3 +27,4 @@ h1{
 .icon:hover{
     transform: scale(2.7);
 }
+

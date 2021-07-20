@@ -12,7 +12,7 @@ import './navbar.css';
 
 function Navbar() {
     return (
-      <Router>
+      // <Router>
         <div class='sticky-top' >
             
     <ReactBootStrap.Navbar className="nav navibar" collapseOnSelect expand="lg" variant="dark">
@@ -33,14 +33,14 @@ function Navbar() {
 </ReactBootStrap.Navbar>
   
         </div>
-        <div>
+        /* <div>
         <Switch>
           <Route path="/features">
             <Features />
           </Route>
         </Switch>
         </div>
-        </Router>
+        </Router> */
     )
 }
 

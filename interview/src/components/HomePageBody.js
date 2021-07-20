@@ -16,7 +16,6 @@ function HomePageBody() {
 
 
     return (
-      <Router>
     <div className={'home'}>
   
 
@@ -31,9 +30,9 @@ function HomePageBody() {
             To sign up or login as company, click the button below.
             </Card.Text>
           
-            <Button variant="primary">
-            <Link to = "/signup">
-              Go somewhere
+            <Button className="btn cbutton" shadow="none">
+            <Link to = "/companysignup">
+              SignUp page
             </Link>
             </Button>
             
@@ -45,23 +44,17 @@ function HomePageBody() {
             <Card.Text className="cardtext" >
             To login for your interview, click the button below.
             </Card.Text>
-            <Button className="btn cbutton" shadow="none" variant="primary">Login Page</Button>
+            <Button className="btn cbutton" shadow="none">
+            <Link to = "/intervieweelogin">
+              login
+            </Link>
+            </Button>
           </Card.Body>
         </Card>
         
         
      </div>
-     <div>
-     <Switch>
-          <Route path="/signup">
-            <CompanySignup />
-          </Route>
-        </Switch>
      </div>
-     
-       
-    </div>
-    </Router>
      
         
     )
