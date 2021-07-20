@@ -11,6 +11,7 @@
     "bcrypt": "^5.0.1",
     "bcryptjs": "^2.4.3",
     "bootstrap": "^4.6.0",
+    "cors": "^2.8.5",
     "crypto": "^1.0.1",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
@@ -20,7 +21,7 @@
     "helmet": "^4.6.0",
     "hpp": "^0.2.3",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.13.2",
+    "mongoose": "^5.13.3",
     "morgan": "^1.10.0",
     "node": "^16.3.0",
     "nodemailer": "^6.6.2",
@@ -62,6 +63,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "type": "module"
+  }
 }
