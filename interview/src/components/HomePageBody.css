@@ -96,9 +96,13 @@ body {
     background-image: linear-gradient(to bottom, #D81B60,#C2185B,#880E4F) ;
     transform: scale(0.8);
     margin-bottom: 10px;
-    position: absolute;
     left: 34px;
     top: 120px;
+    padding-right: 10px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
 }
 

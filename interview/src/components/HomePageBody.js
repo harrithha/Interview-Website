@@ -35,6 +35,11 @@ function HomePageBody() {
               SignUp page
             </Link>
             </Button>
+            <Button className="btn cbutton" shadow="none">
+            <Link to = "/companylogin">
+              Login
+            </Link>
+            </Button>
             
           </Card.Body>
         </Card>
@@ -46,7 +51,7 @@ function HomePageBody() {
             </Card.Text>
             <Button className="btn cbutton" shadow="none">
             <Link to = "/intervieweelogin">
-              login
+              Login
             </Link>
             </Button>
           </Card.Body>

@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import './CompanyLogin.css';
 import {Form} from 'react-bootstrap';
 import {Button} from 'react-bootstrap';
+import {useHistory} from 'react-router-dom';
 
 const CompanyLogin = () => {
+  const history = useHistory();
   const [userLogin, setUserLogin] = useState({
     email: "",
     password : ""
@@ -21,7 +23,7 @@ const CompanyLogin = () => {
   const PostData = async (e) => {
     e.preventDefault();
    const {name, email, password, confirmPass} = userLogin;
-    const res = await fetch("http://localhost:5000/api/v1/users/login",{
+    const res = await fetch("http://localhost:5000/api/v1/users/login/",{
       method : "POST",
       headers : {
         "Content-Type" : "application/json"
@@ -38,10 +40,17 @@ const CompanyLogin = () => {
       window.alert("Invalid Credentials");
       console.log("Unsuccessful");
     }
-    else{
-     window.alert("Valid Login");
-     console.log("Successful");
+    else if (data.status === 401 || data.status === 500){
+     window.alert("Not Registered!");
+     console.log("Unsuccessful");
+     history.push("/companysignup");
    
+    }
+    else
+    {
+     window.alert("Successful Login");
+     console.log("Successful");
+     history.push("/companysignup");
     }
    }
    

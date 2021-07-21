@@ -5,35 +5,21 @@ import Footer from './components/Footer';
 import CompanyLogin from './components/CompanyLogin';
 import IntervieweeLogin from './components/IntervieweeLogin';
 import CompanySignup from './components/CompanySignup';
-<<<<<<< HEAD
-import {Route, Link} from 'react-router-dom'
-=======
-import LoginEnter from './components/LoginEnter';
->>>>>>> ea53f3fc8c8510e067ef71c3eea0b8e40ef41481
+import {Route} from 'react-router-dom'
 
 
 
 function App() {
   return (
     <div className="App">
-<<<<<<< HEAD
       <Navbar/>
       <Route exact path="/" component={HomePageBody}/>
-      <Route exact path="/" component={Features}/>
+      <Route exact path="/features" component={Features}/>
       <Route exact path="/companysignup" component={CompanySignup}/>
       <Route exact path="/companylogin" component={CompanyLogin}/>
       <Route exact path="/intervieweelogin" component={IntervieweeLogin}/>
       <Footer/>
-=======
- <Navbar/>
- <HomePageBody />
- <Features /> 
- <CompanyLogin/>
- <IntervieweeLogin/>
- <CompanySignup />
- <LoginEnter />
- <Footer/>
->>>>>>> ea53f3fc8c8510e067ef71c3eea0b8e40ef41481
+
     </div>
   );
 }

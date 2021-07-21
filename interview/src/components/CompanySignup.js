@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import './CompanySignup.css';
 import {Form} from 'react-bootstrap';
 import {Button} from 'react-bootstrap';
+import {useHistory} from 'react-router-dom';
 
 const CompanySignup = () => {
+  const history = useHistory();
   const [userSignUp, setUserSignUp] = useState({
     name: "",
     email: "",
@@ -45,7 +47,7 @@ const {name, email, password, confirmPass} = userSignUp;
  else{
   window.alert("Valid Registration");
   console.log("Successful");
-
+  history.push("/companylogin");
  }
 }
 
