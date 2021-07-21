@@ -3,6 +3,12 @@ import './CompanySignup.css';
 import {Form} from 'react-bootstrap';
 import {Button} from 'react-bootstrap';
 import {useHistory} from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 const CompanySignup = () => {
   const history = useHistory();
@@ -88,12 +94,14 @@ const {name, email, password, confirmPass} = userSignUp;
 
        <br /> <br />  
         <Button className='b' type="submit" onClick={PostData}>
-          SUBMIT
+          <Link to = "/companylogin">
+            SUBMIT
+          </Link>
         </Button>
         </Form.Group>
-      </Form>
-      </div>
-    )
-}
+    </Form>
 
+    </div>
+    )
+    }
 export default CompanySignup

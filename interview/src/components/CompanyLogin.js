@@ -3,6 +3,7 @@ import './CompanyLogin.css';
 import {Form} from 'react-bootstrap';
 import {Button} from 'react-bootstrap';
 import {useHistory} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const CompanyLogin = () => {
   const history = useHistory();
@@ -78,7 +79,10 @@ const CompanyLogin = () => {
         </Form.Group>
        <br /> <br /> <br />
         <Button className='b' type="submit" onClick={PostData}>
-          SUBMIT
+          <Link to="/loginenter"> 
+            SUBMIT
+          </Link>
+          
         </Button>
         </Form.Group>
       </Form>

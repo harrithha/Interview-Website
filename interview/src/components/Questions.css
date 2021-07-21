@@ -1,0 +1,23 @@
+body {
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+  
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+.background{
+    background-image: linear-gradient(to bottom, #D81B60,#C2185B,#880E4F) ;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.question{
+    padding: 100px 250px 50px 100px;
+}

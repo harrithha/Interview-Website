@@ -6,6 +6,8 @@ import CompanyLogin from './components/CompanyLogin';
 import IntervieweeLogin from './components/IntervieweeLogin';
 import CompanySignup from './components/CompanySignup';
 import {Route} from 'react-router-dom'
+import LoginEnter from './components/LoginEnter';
+import Questions from './components/Questions';
 
 
 
@@ -18,6 +20,8 @@ function App() {
       <Route exact path="/companysignup" component={CompanySignup}/>
       <Route exact path="/companylogin" component={CompanyLogin}/>
       <Route exact path="/intervieweelogin" component={IntervieweeLogin}/>
+      <Route exact path="/loginenter" component={LoginEnter}/>
+      <Route exact path="/questions" component={Questions}/>
       <Footer/>
 
     </div>
