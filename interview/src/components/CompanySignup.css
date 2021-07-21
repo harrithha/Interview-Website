@@ -73,12 +73,10 @@ body {
     padding-top: 40px;
     padding-bottom: 0;
     margin-bottom: 0;
-    font-size: 8vh;
+    font-size: 5vh;
     display: flex;
-    justify-content: center;
+    text-align: left;
     margin-top: 0px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 
@@ -87,12 +85,10 @@ body {
     padding-top: 40px;
     padding-bottom: 0;
     margin-bottom: 0vh;
-    font-size: 4vh;
+    font-size: 20px;
     display: flex;
-    justify-content: center;
+    text-align: left;
     margin-top: 0px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .desc{

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './CompanyLogin.css';
 import {Form} from 'react-bootstrap';
 import {Button} from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const CompanyLogin = () => {
   const [userLogin, setUserLogin] = useState({
@@ -69,7 +70,10 @@ const CompanyLogin = () => {
         </Form.Group>
        <br /> <br /> <br />
         <Button className='b' type="submit" onClick={PostData}>
-          SUBMIT
+          <Link to="/loginenter"> 
+            SUBMIT
+          </Link>
+          
         </Button>
         </Form.Group>
       </Form>

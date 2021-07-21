@@ -2,6 +2,12 @@ import React, { useState } from 'react';
 import './CompanySignup.css';
 import {Form} from 'react-bootstrap';
 import {Button} from 'react-bootstrap';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 const CompanySignup = () => {
   const [userSignUp, setUserSignUp] = useState({
@@ -86,12 +92,14 @@ const {name, email, password, confirmPass} = userSignUp;
 
        <br /> <br />  
         <Button className='b' type="submit" onClick={PostData}>
-          SUBMIT
+          <Link to = "/companylogin">
+            SUBMIT
+          </Link>
         </Button>
         </Form.Group>
-      </Form>
-      </div>
-    )
-}
+    </Form>
 
+    </div>
+    )
+    }
 export default CompanySignup
