@@ -24,8 +24,8 @@ function LoginEnter() {
             <ReactBootStrap.Nav className="ml-auto">
              <ReactBootStrap.Nav.Link className="navitem" as={Link} to={""}>Set Questions for Interview</ReactBootStrap.Nav.Link>
              <ReactBootStrap.Nav.Link className="navitem" as={Link} to={"/intervieweesignup"}>Create New Interviewee Login</ReactBootStrap.Nav.Link>
-             <ReactBootStrap.Nav.Link className="navitem" as={Link} to={"/videocall"}>Start a Video Call</ReactBootStrap.Nav.Link>
-            </ReactBootStrap.Nav>
+             </ReactBootStrap.Nav>
+            <a className="navitem" href="https://chat.1410inc.xyz/">Start a Video Call </a> 
           </ReactBootStrap.Navbar.Collapse>
         </ReactBootStrap.Navbar>
   
