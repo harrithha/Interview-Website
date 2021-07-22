@@ -39,23 +39,30 @@ const {intname, intemail, intpassword, intconfirmPass} = intervieweeSignUp;
  });
 
  const data = await res.json();
-
- if(data.status === 422 || !data) {
-   window.alert("Invalid Registration");
+ console.log(data)
+ if(data.status === "error" || data.status === "fail") {
+  if(data.error.statusCode === 422 || !data)
+  {
+   window.alert("Invalid Credentials : "  + window.alert(data.message));
    console.log("Unsuccessful");
- }
- else if(data.status === 201){
-  window.alert("Valid Registration");
-  console.log("Successful");
-  history.push("/companylogin");
 
+  }
+  else if(data.error.statusCode === 401 || data.error.statusCode === 500 || data.error.statusCode === 400)
+  {
+   window.alert(data.message);
+   window.alert("Not Registered");
+   console.log("Unsuccessful");
+
+  }
  }
  else
  {
-  window.alert("Invalid Registration");
-  console.log("Unsuccessful");
+   window.alert("Successful Signup");
+   console.log("Successful");
+   history.push("/companylogin");
  }
-}
+
+};
 
 
 
