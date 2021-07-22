@@ -67,6 +67,12 @@ function Questions(){
                  <Form.Control as="textarea" rows={5} />
               </Form.Group>
             </Form>
+            <Button className='b' type="submit">
+              <a href="https://replit.com/join/lhxhuwlnfw-siddharthwala">
+                Try it yourself
+              </a>
+          
+            </Button>
         
         </div>
     )
