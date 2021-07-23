@@ -2,8 +2,11 @@ import React, { useState } from 'react';
 import './IntervieweeLogin.css';
 import {Form} from 'react-bootstrap';
 import {Button} from 'react-bootstrap';
+import {useHistory} from 'react-router-dom';
 
 const IntervieweeLogin = () => {
+  
+  const history = useHistory();
   const [intervieweeLogin, setIntervieweeLogin] = useState({
     intemail: "",
     intpassword : ""
@@ -33,17 +36,41 @@ const IntervieweeLogin = () => {
     });
    
     const data = await res.json();
+    console.log(data)
+
    
-    if(data.status === 422 || !data) {
-      window.alert("Invalid Credentials! Please contact Company!");
-      console.log("Unsuccessful");
-    }
-    else{
-     window.alert("Valid Login");
-     console.log("Successful");
+    if(data.status === "error" || data.status === "fail") {
+      if(data.error.statusCode === 422 || !data)
+      {
+       window.alert("Invalid Credentials");
+       console.log("Unsuccessful");
    
-    }
-   }
+      }
+      else if(data.error.statusCode === 401 || data.error.statusCode === 400 )
+      {
+       window.alert(data.message);
+       console.log("Unsuccessful");
+       history.push("/companylogin");
+   
+      }
+      else if(data.error.statusCode === 500)
+      {
+       window.alert("Company Not Registered!");
+       console.log("Unsuccessful");
+       history.push("/companysignup");
+   
+      }
+     }
+     else
+     {
+       window.alert("Successful Login");
+       console.log("Successful");
+       history.push("/loginenter");
+     }
+   
+   };
+   
+   
    
 
 

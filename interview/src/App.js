@@ -8,6 +8,7 @@ import CompanySignup from './components/CompanySignup';
 import {Route} from 'react-router-dom'
 import LoginEnter from './components/LoginEnter';
 import Questions from './components/Questions';
+import SetInterviewee from './components/SetInterviewee';
 
 
 
@@ -22,6 +23,8 @@ function App() {
       <Route exact path="/intervieweelogin" component={IntervieweeLogin}/>
       <Route exact path="/loginenter" component={LoginEnter}/>
       <Route exact path="/questions" component={Questions}/>
+      <Route exact path="/intervieweesignup" component={SetInterviewee}/>
+      <Route exact path="/videocall" component={SetInterviewee}/>
       <Footer/>
 
     </div>

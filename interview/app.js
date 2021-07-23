@@ -7,10 +7,27 @@ const xss = require('xss-clean');
 const hpp = require('hpp');
 var cors = require('cors');
 
+// let server = require( 'http' ).Server( app );
+// let io = require( 'socket.io' )( server );
+// let stream = require( './src/Video-Call-App-NodeJS/src/ws/stream' );
+// let path = require( 'path' );
+// let favicon = require( './src/Video-Call-App-NodeJS/src/favicon.ico' );
+
+
+
 const AppError = require('./server/utils/appError');
 const globalErrorHandler = require('./server/controller/errorController');
 const userRouter = require('./server/routes/userRoutes');
 const intervieweeRouter = require('./server/routes/intervieweeRouter');
+
+// app.use( favicon( path.join( __dirname, 'favicon.ico' ) ) );
+// app.use( './src/Video-Call-App-NodeJS/src/assets', express.static( path.join( __dirname, 'assets' ) ) );
+// app.get( '/', ( req, res ) => {
+//     res.sendFile( __dirname + './src/Video-Call-App-NodeJS/src/index.html' );
+// } );
+
+
+// io.of( './src/Video-Call-App-NodeJS/src/ws/stream.js' ).on( 'connection', stream );
 
 const app = express();
 app.use(cors())

@@ -45,17 +45,30 @@ const {name, email, password, confirmPass} = userSignUp;
  });
 
  const data = await res.json();
+ console.log(data)
+ if(data.status === "error" || data.status === "fail") {
+   if(data.error.statusCode === 422 || !data)
+   {
+    window.alert("Invalid Credentials : "  + window.alert(data.message));
+    console.log("Unsuccessful");
 
- if(data.status === 422 || !data) {
-   window.alert("Invalid Registration");
-   console.log("Unsuccessful");
- }
- else{
-  window.alert("Valid Registration");
-  console.log("Successful");
-  history.push("/companylogin");
- }
-}
+   }
+   else if(data.error.statusCode === 401 || data.error.statusCode === 400 || data.error.statusCode === 500)
+   {
+    window.alert(data.message);
+    window.alert("Not Registered");
+    console.log("Unsuccessful");
+
+   }
+  }
+  else
+  {
+    window.alert("Successful Signup");
+    console.log("Successful");
+    history.push("/companylogin");
+  }
+
+};
 
 
 
@@ -104,4 +117,4 @@ const {name, email, password, confirmPass} = userSignUp;
     </div>
     )
     }
-export default CompanySignup
+export default CompanySignup 

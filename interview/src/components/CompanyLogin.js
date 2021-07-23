@@ -36,24 +36,40 @@ const CompanyLogin = () => {
     });
    
     const data = await res.json();
+   console.log(data)
    
-    if(data.status === 422 || !data) {
-      window.alert("Invalid Credentials");
-      console.log("Unsuccessful");
-    }
-    else if (data.status === 401 || data.status === 500){
-     window.alert("Not Registered!");
-     console.log("Unsuccessful");
-     history.push("/companysignup");
+    if(data.status === "error" || data.status === "fail") {
+      if(data.error.statusCode === 422 || !data)
+      {
+       window.alert("Invalid Credentials");
+       console.log("Unsuccessful");
    
-    }
-    else
-    {
-     window.alert("Successful Login");
-     console.log("Successful");
-     history.push("/companysignup");
-    }
-   }
+      }
+      else if(data.error.statusCode === 401 || data.error.statusCode === 400  )
+      {
+       window.alert(data.message);
+       console.log("Unsuccessful");
+       history.push("/companylogin");
+   
+      }
+      else if(data.error.statusCode === 500)
+      {
+       window.alert("Company Not Registered!");
+       console.log("Unsuccessful");
+       history.push("/companysignup");
+   
+      }
+     }
+     else
+     {
+       window.alert("Successful Login");
+       console.log("Successful");
+       history.push("/loginenter");
+     }
+   
+   };
+   
+   
    
 
 
@@ -79,9 +95,8 @@ const CompanyLogin = () => {
         </Form.Group>
        <br /> <br /> <br />
         <Button className='b' type="submit" onClick={PostData}>
-          <Link to="/loginenter"> 
             SUBMIT
-          </Link>
+
           
         </Button>
         </Form.Group>

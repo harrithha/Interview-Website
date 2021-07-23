@@ -22,9 +22,10 @@ function LoginEnter() {
           <ReactBootStrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">
             <ReactBootStrap.Nav className="ml-auto">
-             <ReactBootStrap.Nav.Link className="navitem" as={Link} to={"/features"}>Set Questions for Interview</ReactBootStrap.Nav.Link>
-             <ReactBootStrap.Nav.Link className="navitem" as={Link} to={"/features"}>Create New Interviewee Login</ReactBootStrap.Nav.Link>
-            </ReactBootStrap.Nav>
+             <ReactBootStrap.Nav.Link className="navitem" as={Link} to={""}>Set Questions for Interview</ReactBootStrap.Nav.Link>
+             <ReactBootStrap.Nav.Link className="navitem" as={Link} to={"/intervieweesignup"}>Create New Interviewee Login</ReactBootStrap.Nav.Link>
+             </ReactBootStrap.Nav>
+            <a className="navitem" href="https://chat.1410inc.xyz/">Start a Video Call </a> 
           </ReactBootStrap.Navbar.Collapse>
         </ReactBootStrap.Navbar>
   
