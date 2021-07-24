@@ -6,13 +6,13 @@ import {
   Link
 } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css'
+import Logout from './Logout'
 import * as ReactBootStrap from 'react-bootstrap'
 import './navbar.css';
 
 
 
 function LoginEnter() {
-
 
     return (
         <div class='sticky-top' >
@@ -24,9 +24,14 @@ function LoginEnter() {
             <ReactBootStrap.Nav className="ml-auto">
              <ReactBootStrap.Nav.Link className="navitem" as={Link} to={""}>Set Questions for Interview</ReactBootStrap.Nav.Link>
              <ReactBootStrap.Nav.Link className="navitem" as={Link} to={"/intervieweesignup"}>Create New Interviewee Login</ReactBootStrap.Nav.Link>
-             </ReactBootStrap.Nav>
-            <a className="navitem" href="https://chat.1410inc.xyz/">Start a Video Call </a> 
-          </ReactBootStrap.Navbar.Collapse>
+         
+            <ReactBootStrap.Nav.Link className="navitem" as={Link} to={"/updatedetails"}>Update Details</ReactBootStrap.Nav.Link>
+            <ReactBootStrap.Nav.Link className="navitem" as={Link} to={"/updatepassword"}>Update Password</ReactBootStrap.Nav.Link>
+            <ReactBootStrap.Nav.Link className="navitem" as={Link} to={"/logout"}>Logout</ReactBootStrap.Nav.Link>
+            <ReactBootStrap.Nav.Link className="navitem" href={"https://chat.1410inc.xyz/"}>Start a Video Call</ReactBootStrap.Nav.Link>
+
+         </ReactBootStrap.Nav>
+    </ReactBootStrap.Navbar.Collapse>
         </ReactBootStrap.Navbar>
   
         </div>

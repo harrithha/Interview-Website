@@ -9,6 +9,10 @@ import {Route} from 'react-router-dom'
 import LoginEnter from './components/LoginEnter';
 import Questions from './components/Questions';
 import SetInterviewee from './components/SetInterviewee';
+import UpdateDetails from './components/UpdateDetails';
+import UpdatePassword from './components/UpdatePassword';
+import Logout from './components/Logout'
+import ErrorPage from './components/ErrorPage'
 
 
 
@@ -25,6 +29,10 @@ function App() {
       <Route exact path="/questions" component={Questions}/>
       <Route exact path="/intervieweesignup" component={SetInterviewee}/>
       <Route exact path="/videocall" component={SetInterviewee}/>
+      <Route exact path="/logout" component={Logout}/>
+      <Route exact path="/updatedetails" component={UpdateDetails}/>
+      <Route exact path="/updatepassword" component={UpdatePassword}/>
+      <Route > <ErrorPage/> </Route>
       <Footer/>
 
     </div>
