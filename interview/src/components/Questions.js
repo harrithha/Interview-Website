@@ -32,7 +32,7 @@ import {
  const display = questions.map((question) => 
  <Form className='question'>
               <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                 <Form.Label>Question {question.num} </Form.Label>
+                 <Form.Label>Question {question.num} ) </Form.Label>
                  <Form.Label>{question.ques}</Form.Label>
                  
               </Form.Group>
@@ -42,16 +42,23 @@ import {
               </Form.Group>
             </Form>);
 
+// (pushData) => {
+//    questions.push(document.getElementById("inputText").value)
+// };
+
 function Questions(){
     return(
         <div className='background'>
-           {display}
-            <Button className='b' type="submit">
-              <a href="https://replit.com/join/lhxhuwlnfw-siddharthwala">
-                Try it yourself
-              </a>
+         {display}
+         {/* <h5>Add your won question </h5>
+         <input type="text" id="inputText" name="inputText" />
+         <Button onClick = {pushData}>Add</Button> */}
+         <Button className='b' type="submit">
+            <a href="https://replit.com/join/lhxhuwlnfw-siddharthwala">
+               Try it yourself
+            </a>
           
-            </Button>
+         </Button>
         
         </div>
     )
