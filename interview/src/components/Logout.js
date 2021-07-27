@@ -9,7 +9,7 @@ const Logout = () => {
     const history = useHistory();
 
     useEffect(() => {
-        fetch("http://localhost:5000/access-control-allow-origin/api/v1/users/login/", {
+        fetch("http://localhost:5000/api/v1/users/login/", {
             method: "GET",
             headers: {
                 Accept: "application/json",
