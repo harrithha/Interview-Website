@@ -18,6 +18,15 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.add-button{
+    color: black;
+}
+
 .question{
     padding: 100px 250px 50px 100px;
+}
+
+#custom-input{
+
+    color: black;
 }
