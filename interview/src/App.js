@@ -21,7 +21,7 @@ function App() {
     <div className="App">
       <Navbar/>
       <Route exact path="/" component={HomePageBody}/>
-      <Route exact path="/features" component={Features}/>
+      <Route exact path="/" component={Features}/>
       <Route exact path="/companysignup" component={CompanySignup}/>
       <Route exact path="/companylogin" component={CompanyLogin}/>
       <Route exact path="/intervieweelogin" component={IntervieweeLogin}/>
@@ -32,7 +32,7 @@ function App() {
       <Route exact path="/logout" component={Logout}/>
       <Route exact path="/updatedetails" component={UpdateDetails}/>
       <Route exact path="/updatepassword" component={UpdatePassword}/>
-      <Route > <ErrorPage/> </Route>
+      <Route exact path="/error" component={ErrorPage}/>
       <Footer/>
 
     </div>
