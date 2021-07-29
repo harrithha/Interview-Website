@@ -38,6 +38,7 @@ function Questions(){
        <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
           <Form.Label>Answer here</Form.Label>
           <Form.Control as="textarea" rows={5} />
+          <Button className="btn">submit</Button>
        </Form.Group>
     </Form>
 );
