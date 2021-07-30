@@ -18,8 +18,17 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.add-button{
-    color: black;
+.buttons{
+    margin-top: 5px;
+    border-color: black;
+    background-color: black;
+    
+}
+
+.buttons:hover{
+    border-color: white;
+    background-color: transparent;
+    
 }
 
 .question{
@@ -29,4 +38,8 @@ body {
 #custom-input{
 
     color: black;
+}
+
+.custom-button{
+    margin-left:  10px;
 }

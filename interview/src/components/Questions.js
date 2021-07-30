@@ -68,7 +68,11 @@ const Questions = () => {
        <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
           <Form.Label>Answer here</Form.Label>
           <Form.Control as="textarea" rows={5} />
+<<<<<<< HEAD
           <Button className="btn" onClick={PostData}>submit</Button>
+=======
+          <Button className="buttons">submit</Button>
+>>>>>>> 08ed9b922507b893fe527761390947232ad46eb2
        </Form.Group>
     </Form>
 );
@@ -76,6 +80,7 @@ const Questions = () => {
    return(
       <div className='background'>
         {display}
+<<<<<<< HEAD
         <input id="custom-input" type="text" ></input>
         <button className="add-button" onClick={handleClick}>
           Add
@@ -88,6 +93,15 @@ const Questions = () => {
          </a>
           
         </Button>
+=======
+        <div className="question">
+          <h5>Add your custom question</h5>
+          <input id="custom-input" type="text"></input>
+          <Button className="buttons custom-button" onClick={handleClick}>
+            Add
+          </Button>
+        </div>
+>>>>>>> 08ed9b922507b893fe527761390947232ad46eb2
         
       </div>
     )
