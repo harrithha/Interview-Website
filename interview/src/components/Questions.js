@@ -2,7 +2,11 @@ import React, { useState } from 'react';
 import './Questions.css';
 import {Form} from 'react-bootstrap';
 import {Button} from 'react-bootstrap';
-import {useHistory} from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+ 
+} from "react-router-dom";
+import e from 'cors';
 
 
 const Questions = () => {
@@ -14,6 +18,7 @@ const Questions = () => {
          "What are your biggest strengths?",
          "Where do you see yourself in 5 years?",
    ];
+
    const i = 0;
    const [ans, setans] = useState({
      answer : ""
@@ -28,26 +33,23 @@ const Questions = () => {
  
     setans({ ...ans, [name] : value});
    }
- 
- 
- const PostData = async (e) => {
-  e.preventDefault();
- const {answer} = ans;
-  const res = await fetch("http://localhost:5000/api/v1/users/answers",{
-    method : "POST",
-    headers : {
-      "Content-Type" : "application/json"
-    },
-    body : JSON.stringify({
-      answer
-    })
- 
-  });
- 
-  const data = await res.json();
-  console.log(data)
-
-  
+   const PostData = async (e) => {
+      e.preventDefault();
+     const {answer} = ans;
+      const res = await fetch("http://localhost:5000/api/v1/users/answers",{
+        method : "POST",
+        headers : {
+          "Content-Type" : "application/json"
+        },
+        body : JSON.stringify({
+          answer
+        })
+     
+      });
+     
+      const data = await res.json();
+      console.log(data)
+   }
  const [customques, setCustomques] = useState(questions);
 
  function handleClick(e){
@@ -59,20 +61,16 @@ const Questions = () => {
  const display = customques.map((question) => 
  <Form className='question'>
        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-       <Form.Control value={ans.answer} onChange={handleInput} />
-       
           <Form.Label>Question {customques.indexOf(question) + 1} ) </Form.Label>
+        
           <Form.Label>{question}</Form.Label>
               
        </Form.Group>
        <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
           <Form.Label>Answer here</Form.Label>
-          <Form.Control as="textarea" rows={5} />
-<<<<<<< HEAD
-          <Button className="btn" onClick={PostData}>submit</Button>
-=======
-          <Button className="buttons">submit</Button>
->>>>>>> 08ed9b922507b893fe527761390947232ad46eb2
+          <Form.Control as="textarea" rows={5} placeholder="Enter Answer" autoComplete="off" value={ans.answer} onChange={handleInput} 
+          name = "answer" id="answer"/>
+          <Button className="buttons" onClick={PostData}>submit</Button> 
        </Form.Group>
     </Form>
 );
@@ -80,20 +78,6 @@ const Questions = () => {
    return(
       <div className='background'>
         {display}
-<<<<<<< HEAD
-        <input id="custom-input" type="text" ></input>
-        <button className="add-button" onClick={handleClick}>
-          Add
-        </button>
-        {/* {display_new} */}
-        
-        <Button className='b' type="submit">
-         <a href="https://replit.com/join/lhxhuwlnfw-siddharthwala">
-            Try it yourself
-         </a>
-          
-        </Button>
-=======
         <div className="question">
           <h5>Add your custom question</h5>
           <input id="custom-input" type="text"></input>
@@ -101,12 +85,9 @@ const Questions = () => {
             Add
           </Button>
         </div>
->>>>>>> 08ed9b922507b893fe527761390947232ad46eb2
         
       </div>
     )
 }
 
-}
 export default Questions
-
