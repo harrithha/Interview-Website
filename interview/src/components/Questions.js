@@ -38,7 +38,7 @@ function Questions(){
        <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
           <Form.Label>Answer here</Form.Label>
           <Form.Control as="textarea" rows={5} />
-          <Button className="btn">submit</Button>
+          <Button className="buttons">submit</Button>
        </Form.Group>
     </Form>
 );
@@ -46,18 +46,13 @@ function Questions(){
    return(
       <div className='background'>
         {display}
-        <input id="custom-input" type="text"></input>
-        <button className="add-button" onClick={handleClick}>
-          Add
-        </button>
-        {/* {display_new} */}
-        
-        <Button className='b' type="submit">
-         <a href="https://replit.com/join/lhxhuwlnfw-siddharthwala">
-            Try it yourself
-         </a>
-          
-        </Button>
+        <div className="question">
+          <h5>Add your custom question</h5>
+          <input id="custom-input" type="text"></input>
+          <Button className="buttons custom-button" onClick={handleClick}>
+            Add
+          </Button>
+        </div>
         
       </div>
     )
