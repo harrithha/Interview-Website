@@ -30,12 +30,12 @@ function HomePageBody() {
             To sign up or login as company, click the button below.
             </Card.Text>
           
-            <Button className="btn cbutton" shadow="none">
+            <Button className="cbutton1">
             <Link to = "/companysignup">
               SignUp page
             </Link>
             </Button>
-            <Button className="btn cbutton" shadow="none">
+            <Button className="cbutton2">
             <Link to = "/companylogin">
               Login
             </Link>
@@ -49,7 +49,7 @@ function HomePageBody() {
             <Card.Text className="cardtext" >
             To login for your interview, click the button below.
             </Card.Text>
-            <Button className="btn cbutton" shadow="none">
+            <Button className="cbutton3">
             <Link to = "/intervieweelogin">
               Login
             </Link>
