@@ -1,4 +1,4 @@
-const User = require('./../models/ans');
+const User = require('./../models/answers');
 const catchAsync = require('./../utils/catchAsync');
 
 exports.store = catchAsync(async (req, res, next) => {

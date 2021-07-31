@@ -36,7 +36,7 @@ const Questions = () => {
    const PostData = async (e) => {
       e.preventDefault();
      const {answer} = ans;
-      const res = await fetch("http://localhost:5000/api/v1/users/answers",{
+      const res = await fetch("http://localhost:5000/api/v1/ans/answers",{
         method : "POST",
         headers : {
           "Content-Type" : "application/json"
@@ -68,8 +68,8 @@ const Questions = () => {
        </Form.Group>
        <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
           <Form.Label>Answer here</Form.Label>
-          <Form.Control as="textarea" rows={5} placeholder="Enter Answer" autoComplete="off" value={ans.answer} onChange={handleInput} 
-          name = "answer" id="answer"/>
+          <Form.Control type="text" rows={5} placeholder="Enter Answer" autoComplete="off" value={ans.answer} onChange={handleInput} 
+          name = "text" id="text"/>
           <Button className="buttons" onClick={PostData}>submit</Button> 
        </Form.Group>
     </Form>

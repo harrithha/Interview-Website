@@ -1,12 +1,12 @@
 const express = require('express');
-const ansController = require('./../controller/ans');
+const ansController = require('./../controller/ansController');
 
 const router = express.Router();
 
 router.post('/answers', ansController.store);
 
 router
-  .route('/ans')
+  .route('/')
   .get(ansController.getAns)
 
 module.exports = router;
