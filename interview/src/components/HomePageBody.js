@@ -29,18 +29,16 @@ function HomePageBody() {
             <Card.Text className="cardtext">
             To sign up or login as company, click the button below.
             </Card.Text>
-          
-            <Button className="cbutton1">
             <Link to = "/companysignup">
-              SignUp page
+              <Button className="cbutton1">
+                 SignUp page
+              </Button>
             </Link>
-            </Button>
-            <Button className="cbutton2">
-            <Link to = "/companylogin">
-              Login
+            <Link to = "/companyslogin">
+              <Button className="cbutton2">
+                 Login
+              </Button>
             </Link>
-            </Button>
-            
           </Card.Body>
         </Card>
         <Card className="card2" style={{ width: '18rem' }}>
@@ -49,11 +47,11 @@ function HomePageBody() {
             <Card.Text className="cardtext" >
             To login for your interview, click the button below.
             </Card.Text>
-            <Button className="cbutton3">
             <Link to = "/intervieweelogin">
-              Login
+              <Button className="cbutton3">
+                 Login
+              </Button>
             </Link>
-            </Button>
           </Card.Body>
         </Card>
         
