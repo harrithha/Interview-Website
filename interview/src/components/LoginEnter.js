@@ -15,14 +15,14 @@ import './navbar.css';
 function LoginEnter() {
 
     return (
-        <div class='sticky-top' >
+        <div class='login-enter' >
+
             
         <ReactBootStrap.Navbar className="nav navibar" collapseOnSelect expand="lg" variant="dark">
-          <ReactBootStrap.Navbar.Brand className="navbrand" href="#home">SyneView <img className="weblogo" src="interview.png" /></ReactBootStrap.Navbar.Brand>
           <ReactBootStrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">
             <ReactBootStrap.Nav className="ml-auto">
-             <ReactBootStrap.Nav.Link className="navitem" as={Link} to={""}>Set Questions for Interview</ReactBootStrap.Nav.Link>
+             <ReactBootStrap.Nav.Link className="navitem" as={Link} to={"/questions"}>Set Questions for Interview</ReactBootStrap.Nav.Link>
              <ReactBootStrap.Nav.Link className="navitem" as={Link} to={"/intervieweesignup"}>Create New Interviewee Login</ReactBootStrap.Nav.Link>
          
             <ReactBootStrap.Nav.Link className="navitem" as={Link} to={"/updatedetails"}>Update Details</ReactBootStrap.Nav.Link>

@@ -3,9 +3,11 @@ import './CompanyLogin.css';
 import {Form} from 'react-bootstrap';
 import {Button} from 'react-bootstrap';
 import {useHistory} from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import {Route} from 'react-router-dom'
+import LoginEnter from './LoginEnter';
 
 const CompanyLogin = () => {
+
   const history = useHistory();
   const [userLogin, setUserLogin] = useState({
     email: "",
@@ -66,7 +68,7 @@ const CompanyLogin = () => {
        console.log("Successful");
        history.push("/loginenter");
      }
-   
+     
    };
    
    

@@ -83,18 +83,18 @@ const IntervieweeLogin = () => {
         <p className='intro col-lg-12'></p>
         
         <Form.Group className='hi'>
-        <Form.Group controlId="formBasicEmail" className='email col-lg-12'>
-          <Form.Label>USERNAME</Form.Label>
+        <Form.Group controlId="formBasicEmail" className='email col-lg-4'>
+          <Form.Label className='aligning'>USERNAME</Form.Label>
           <Form.Control type="email" placeholder="Enter email" autoComplete="off" value={intervieweeLogin.intemail} onChange={handleInput} 
           name = "intemail" id="intemail"/>
         </Form.Group>
       
-        <Form.Group controlId="formBasicPassword" className='password col-lg-12'>
-          <Form.Label>PASSWORD</Form.Label>
+        <Form.Group controlId="formBasicPassword" className='password col-lg-4'>
+          <Form.Label className='aligning'>PASSWORD</Form.Label>
           <Form.Control type="password" placeholder="Enter password" autoComplete="off" value={intervieweeLogin.intpassword} onChange={handleInput} 
           name = "intpassword" id="intpassword"/>
         </Form.Group>
-       <br /> <br /> <br />
+        <br /> <br /> <br />
         <Button className='b' type="submit" onClick={PostData}>
           SUBMIT
         </Button>
