@@ -66,7 +66,7 @@ const Questions = () => {
           <Form.Label>{question}</Form.Label>
               
        </Form.Group>
-       <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+       <Form.Group className="mb-3" id="exampleForm.ControlTextarea1">
           <Form.Label>Answer here</Form.Label>
           <Form.Control type="text" rows={5} placeholder="Enter Answer" autoComplete="off" value={ans.answer} onChange={handleInput} 
           name = "text" id="text"/>
