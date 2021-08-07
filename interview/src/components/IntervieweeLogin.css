@@ -39,7 +39,6 @@ body {
    .head{
        font-size: 3vw;
    }
-
    .email{
        height: 40px;
        width: 500px;
@@ -64,7 +63,7 @@ body {
     margin: 0 auto 0 auto;
     padding-top: 40px;
     padding-bottom: 0;
-    font-size: 8vh;
+    font-size: 22px;
     display: flex;
     justify-content: center;
 }

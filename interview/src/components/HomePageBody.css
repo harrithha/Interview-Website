@@ -131,7 +131,6 @@ body {
 .cbutton1:hover{
     border-color: white;
     color: black;
-    transform: scale(0.9);
     background-color: white;
     font-weight: bold;
 
@@ -139,9 +138,7 @@ body {
 
 .cbutton2:hover{
     border-color: white;
-    text-decoration: none;
     color: black;
-    transform: scale(0.9);
     background-color: white;
     font-weight: bold;
 
@@ -149,9 +146,7 @@ body {
 
 .cbutton3:hover{
     border-color: white;
-    text-decoration: none;
     color: black;
-    transform: scale(0.9);
     background-color: white;
     font-weight: bold;
 
