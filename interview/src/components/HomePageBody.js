@@ -22,7 +22,7 @@ function HomePageBody() {
      <div class="webname">
         <h1 class="header">Welcome</h1>
         <h1 class="header">to</h1>
-        <h1 class="header">Syneview</h1> 
+        <h1 class="header">SyneView</h1>
         <Card className="card1" style={{ width: '18rem' }}>
           <Card.Body>
             <Card.Title className="cardtitle">Company</Card.Title>

@@ -24,20 +24,16 @@ body {
    }
 
    .b{ 
-    background-color: pink;
-    color: black;
-    display: flex;
-    justify-content: center;
-    margin-top: 0px;
-    margin-left: auto;
-    margin-right: auto;
+    color: white;
+    border-color: black;
+    background-color: black;
 }
 
    .b:hover{
-       background-color: powderblue;
-       color: black;
-       transform: scale(1.1);
-       transition: 0.25s;
+       transform: scale(1.05);
+        color: black;
+        border-color: white;
+        background-color: white;
    }
 
    .head{
@@ -64,30 +60,23 @@ body {
     margin: auto;
 }
 .welcome{
-    margin-top: 0px;
+    color: white;
+    margin: 0 auto 0 auto;
     padding-top: 40px;
     padding-bottom: 0;
-    margin-bottom: 0;
     font-size: 8vh;
     display: flex;
     justify-content: center;
-    margin-top: 0px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 
 .intro{
-    margin-top: 0px;
+    margin: 0 auto 0 auto;
     padding-top: 40px;
     padding-bottom: 0;
-    margin-bottom: 0vh;
     font-size: 4vh;
     display: flex;
     justify-content: center;
-    margin-top: 0px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 
