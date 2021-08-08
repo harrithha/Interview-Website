@@ -25,20 +25,18 @@ body {
    }
 
    .b{
-    background-color: pink;
-    color: black;
-    display: flex;
-    justify-content: center;
-    margin-top: 0px;
-    margin-left: auto;
-    margin-right: auto;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    
 }
 
 .b:hover{
-    background-color: powderblue;
+    text-decoration: none;
+    background-color: white;
     color: black;
-    transform: scale(1.1);
-    transition: 0.25s;
+    transform: scale(1.05);
+ 
 }
 
    .head{
@@ -60,12 +58,10 @@ body {
     width: 500px;
     padding-top: 16px;
     padding-bottom: 0px;
-    margin-top: 0px;
-    margin-bottom : 0px;
+    margin: 0 auto 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: auto;
 }
 
 .welcome{
@@ -76,7 +72,6 @@ body {
     font-size: 5vh;
     display: flex;
     text-align: left;
-    margin-top: 0px;
 }
 
 
@@ -88,7 +83,6 @@ body {
     font-size: 20px;
     display: flex;
     text-align: left;
-    margin-top: 0px;
 }
 
 .desc{

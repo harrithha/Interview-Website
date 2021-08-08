@@ -105,12 +105,13 @@ const {name, email, password, confirmPass} = userSignUp;
           name = "confirmPass" id="confirmPass"/>
         </Form.Group>
 
-       <br /> <br />  
-        <Button className='b' type="submit" onClick={PostData}>
-          <Link to = "/companylogin">
-            SUBMIT
-          </Link>
+       <br /> <br />
+       <Link to = "/companylogin">
+       <Button className='b' type="submit" onClick={PostData}>
+          SUBMIT
         </Button>
+       </Link>
+        
         </Form.Group>
     </Form>
 

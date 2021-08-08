@@ -98,8 +98,6 @@ const CompanyLogin = () => {
        <br /> <br /> <br />
         <Button className='b' type="submit" onClick={PostData}>
             SUBMIT
-
-          
         </Button>
         </Form.Group>
       </Form>

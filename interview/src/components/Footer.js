@@ -9,7 +9,6 @@ import { FiPhoneCall } from 'react-icons/fi';
 function Footer() {
     return (
         <div className='footer'>
-            <h1>SyneView</h1>
             <div className='row' >
               <div className='feature col-lg-3'>
                <FaFacebook className="icon"/>          
